@@ -23,7 +23,7 @@ function Hero({}: Props) {
         {/** Change to NextJS image */}
 
         <img className='relative rounded-full h-32 w-32 mx-auto object-cover'
-          src="https://cdn.sanity.io/images/znii663s/production/bbcf0ef0bc5b6229bd064009874947661bec540f-2048x2048.jpg"
+          src="https://cdn.sanity.io/images/znii663s/production/45a8d261269a0f0bd3b8d64f0b42eafd0b8f8d21-600x600.jpg"
           alt=""
         />
         <div className='z-20'>

@@ -26,9 +26,9 @@ function About({}: Props) {
             }}
             whileInView={{opacity: 1, x: 0}}
             viewport={{ once: true }}
-            src="https://cdn.sanity.io/images/znii663s/production/a4f7be4725ada5233019dafbdafafff198bf633a-1256x1675.jpg"
+            src="https://cdn.sanity.io/images/znii663s/production/45a8d261269a0f0bd3b8d64f0b42eafd0b8f8d21-600x600.jpg"
             className='-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover
-                        md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]'
+                        md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[500px]'
         />
 
         <div className='space-y-10 px-0 md:px-10'>
