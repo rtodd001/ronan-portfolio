@@ -24,7 +24,7 @@ function Projects({}: Props) {
                         transition={{ duration: 0.6 }}
                         whileInView={{ opacity: 1 }}
         
-                        src='https://cdn.sanity.io/images/znii663s/production/a4f7be4725ada5233019dafbdafafff198bf633a-1256x1675.jpg'
+                        src='https://cdn.sanity.io/images/znii663s/production/45a8d261269a0f0bd3b8d64f0b42eafd0b8f8d21-600x600.jpg'
                         alt=''
                     />
                     <div className='space-y-10 px-0 md:px-0 max-w-6xl'>
