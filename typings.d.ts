@@ -25,8 +25,37 @@ export interface PageInfo extends SanityBody {
     profilePic: Image
 }
 
+export interface Technology extends SanityBody {
+    _type: "skill",
+    image: Image,
+    progress: number,
+    title: string,
+}
+
+export interface Skill extends SanityBody {
+    _type: "skill",
+    image: Image,
+    progress: number,
+    title: string,
+
+}
+
+export interface Project extends SanityBody {
+    title: string,
+    _type: "project",
+    image: Image,
+    progress: number,
+    summary: string,
+    technologies: Technology[]
+}
+
 export interface Experience extends SanityBody {
     _type: "experience"
-    title: string,
-    url: string
+    company: string,
+    companyImage: Image,
+    dateStarted: date,
+    dateEnded: date,
+    jobTitle: string,
+    points: string[],
+    technologies: Technology[]
 }
