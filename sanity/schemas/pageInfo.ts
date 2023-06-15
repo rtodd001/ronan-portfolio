@@ -22,9 +22,9 @@ export default {
             }
         },
         {
-            name: 'backgroundInfo',
-            title: 'BackgroundInfo',
-            type: 'string',
+            name: 'backgroundInformation',
+            title: 'BackgroundInformation',
+            type: 'text',
         },
         {
             name: 'profilePic',

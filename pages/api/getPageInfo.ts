@@ -16,5 +16,7 @@ export default async function handler(
   ) {
     const pageInfo: PageInfo = await sanityClient.fetch(query);
 
+    // console.log("api", pageInfo)
+
     res.status(200).json({ pageInfo })
   }

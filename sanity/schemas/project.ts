@@ -10,9 +10,9 @@ export default {
             type: 'string'
         },
         {
-            name: 'media',
-            title: 'Media',
-            type: 'file',
+            name: 'image',
+            title: 'Image',
+            type: 'image',
             options: {
                 hotspot: true
             }
