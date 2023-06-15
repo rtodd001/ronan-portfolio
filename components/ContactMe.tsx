@@ -1,6 +1,7 @@
 import React from 'react'
 import { EnvelopeIcon, MapPinIcon, PhoneIcon } from '@heroicons/react/24/solid'
 import { SubmitHandler, useForm } from "react-hook-form";
+import { PageInfo } from '@/typings';
 
 type Inputs = {
     name: string;
@@ -9,9 +10,11 @@ type Inputs = {
     message: string;
 }
 
-type Props = {}
+type Props = {
+    pageInfo: PageInfo
+}
 
-function ContactMe({}: Props) {
+function ContactMe({ pageInfo }: Props) {
 
     const { 
         register, 
@@ -38,17 +41,17 @@ function ContactMe({}: Props) {
             <div className='space-y-10'>
                 <div className='flex items-center space-x-5 justify-center'>
                     <PhoneIcon className='text-[#F7AB0A] -7 w-7 animate-pulse'/>
-                    <p className='text-2xl'>3102926318</p>
+                    <p className='text-2xl'>{pageInfo?.phoneNumber}</p>
                 </div>
 
                 <div className='flex items-center space-x-5 justify-center'>
                     <EnvelopeIcon className='text-[#F7AB0A] -7 w-7 animate-pulse'/>
-                    <p className='text-2xl'>ronan.jtodd@gmail.com</p>
+                    <p className='text-2xl'>{pageInfo?.email}</p>
                 </div>
 
                 <div className='flex items-center space-x-5 justify-center'>
                     <MapPinIcon className='text-[#F7AB0A] -7 w-7 animate-pulse'/>
-                    <p className='text-2xl'>Seattle, WA</p>
+                    <p className='text-2xl'>{pageInfo?.address}</p>
                 </div>
             </div>
 

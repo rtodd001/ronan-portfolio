@@ -6,7 +6,11 @@ export const fetchProjects = async () => {
     const data = await res.json()
     const projects: Project[] = data.projects;
 
-    console.log("fetching", projects);
+    projects.sort((a, b) => (
+        new Date(b.dateEnded).getTime() - new Date(a.dateEnded).getTime()
+    ))
+
+    // console.log("fetching", projects);
 
     return projects;
 }

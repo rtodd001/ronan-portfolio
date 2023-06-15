@@ -5,6 +5,9 @@ export const fetchExperiences = async () => {
 
     const data = await res.json()
     const experiences: Experience[] = data.experiences;
+    experiences.sort((a, b) => (
+        new Date(b.dateEnded).getTime() - new Date(a.dateEnded).getTime()
+    ))
 
     // console.log("fetching", experiences);
 

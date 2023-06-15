@@ -8,6 +8,7 @@ type Props = {
 }
 
 function Skill({skill}: Props) {
+  const message = `${skill.progress}/5 ${skill.title}`
   return (<div className='group relative flex cursor-pointer '>
     <motion.img
         initial = {{
@@ -21,7 +22,7 @@ function Skill({skill}: Props) {
     <div className='absolute opacity-0 group-hover:opacity-80 group-hover:bg-white 
                     h-24 w-24 md:w-28 md:h-28 xl:w-32 xl:h-32 rounded-full z-0'>
         <div className='flex items-center justify-center h-full'>
-            <p className='text-3xl font-bold text-black opacity-100'>{skill.progress}/5</p>
+            <p className='text-l font-bold text-black opacity-100'>{message}</p>
         </div>
     </div>
 

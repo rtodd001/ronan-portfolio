@@ -32,6 +32,16 @@ export default {
             name: 'linkToBuild',
             title: 'LinkToBuild',
             type: 'url',
+        },
+        {
+            name: 'dateStarted',
+            title: 'DateStarted',
+            type: 'date'
+        },
+        {
+            name: 'dateEnded',
+            title: 'DateEnded',
+            type: 'date',
         }
     ]
 }
