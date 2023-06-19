@@ -13,4 +13,16 @@
         text-gray-500 placeholder-gray-500 transition-all focus:border-[#F7AB0A]/40
         focus:text-[#F7AB0A]/40
     }
+
+    .embla {
+        overflow: hidden;
+      }
+      .embla__container {
+        display: flex;
+      }
+      .embla__slide {
+        flex: 0 0 100%;
+        min-width: 0;
+      }
+      
 }
